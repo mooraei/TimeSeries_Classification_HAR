@@ -1,11 +1,11 @@
-from src.loader import Loader
+import src.lstm
 
 
 def runner():
-    data = Loader()
-    print(data.x_train[0])
-    print('==============================')
-    print(data.x_train[0].shape)
+    print('LSTM network is running ...')
+    src.lstm.run()
+    print('LSTM network is finishing!')
+
 
 
 if __name__ == '__main__':
